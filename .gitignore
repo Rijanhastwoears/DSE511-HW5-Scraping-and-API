@@ -13,3 +13,9 @@
 
 # Temp
 Scratchpad.md
+
+# MacOS
+.DS_Store
+
+# Vim
+*.swp

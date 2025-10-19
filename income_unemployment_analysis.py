@@ -182,12 +182,18 @@ def create_income_summary_report(data_dict, save_dir='reports/income_analysis'):
         if df is not None:
             save_data(df, f"{series_id}_income_10y", raw=True)
 
+            # Clean and save cleaned data
+            cleaned_df = clean_data(df, method='drop')
+            save_data(cleaned_df, f"{series_id}_income_10y", raw=False)
+
     # Print summary to console
     print("\n" + "="*100)
     print("INCOME-BASED UNEMPLOYMENT RATE ANALYSIS SUMMARY")
     print("="*100)
     print(f"Analysis Period: Last 10 years")
     print(f"Number of Groups Analyzed: {len([df for df in data_dict.values() if df is not None])}")
+    print(f"Raw data saved to: raw_data/")
+    print(f"Cleaned data saved to: clean_data/")
     print("\nDescriptive Statistics:")
     print("-" * 80)
     print(stats_df.to_string(index=False))
