@@ -1,0 +1,15 @@
+# Binaries
+.venv
+*.pyc
+
+# Data file
+*.csv
+*.tsv
+
+# Images
+*.jpg
+*.png
+*.gif
+
+# Temp
+Scratchpad.md
