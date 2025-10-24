@@ -1,5 +1,14 @@
-# Homework Specific notes
+# Table of Contents
 
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Contributing](#contributing)
+- [License](#license)
+
+# Homework Specific notes
 **Option choice**: I chose option one.
 
 **Data**: The data I chose is coming from the [Federal Reserve's API](https://fred.stlouisfed.org/docs/api/fred/). 
@@ -18,7 +27,7 @@ Said proper attribution needs to look something like this:
 
 It is worth noting that while the data is coming from an independent branch of the US government it does not come attached with a warranty or endorsement.
 
-I don't there are any particular dangers to this type of data or using this API.
+I don't think there are any particular dangers to this type of data or using this API.
 
 The following soruces should have more details on this:
 
@@ -29,19 +38,9 @@ The following soruces should have more details on this:
 
 There are two ways to access the Mini-Analysis:
 
-- Run the reproduction scripts
+- Run the reproduction script named `income_unemployment_analysis.py`
 
 - Or visit this [Onedrive link](https://liveutk-my.sharepoint.com/:f:/g/personal/rdhakal2_vols_utk_edu/EgFnqokHHONHvY1J8WiEYGsBZGZpEo_gMNTowiHqqZ6BMg?e=OZfP8I)
-
-# Table of Contents
-
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [API Reference](#api-reference)
-- [Contributing](#contributing)
-- [License](#license)
 
 # Economic Data Analysis with FRED API
 
@@ -110,6 +109,8 @@ pip install -e .
 ## Configuration
 
 1. **Set your FRED API Key**: Open `fred_client.py` and replace the placeholder on line 7:
+
+Note for Scott:- I have put my API keyh in the script - probably should not do that but it does save you some time :).
    ```python
    API_KEY = 'your-actual-api-key-here'
    ```
@@ -217,18 +218,6 @@ See the `if __name__ == "__main__"` sections in each script for usage examples.
 - requests
 - matplotlib
 - seaborn
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is open source. Please check individual file headers for license information.
 
 ## Support
 
